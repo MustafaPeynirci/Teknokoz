@@ -155,6 +155,42 @@
       </div>
     </div>
   </div>
+  <div class="container mt-10 mb-5">
+    <h1 class="fw-bolder mb-0">Fırsatları Değerlendirin!</h1>
+    <span class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    <div class="row row-cols-1 row-cols-md-3 g-5 mt-4">
+      <div class="col">
+        <div class="card h-100 border-0">
+          <img src="../assets/img/blog-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-start grey">
+            <h5 class="">Kurumsal Web Sitesi</h5>
+            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Hemen Bilgi Alın</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0">
+          <img src="../assets/img/blog-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-start grey">
+            <h5 class="">Özel Yazılım</h5>
+            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Hemen Bilgi Alın</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-0">
+          <img src="../assets/img/blog-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body text-start grey">
+            <h5 class="">Dijital Market</h5>
+            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Hemen Bilgi Alın</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
   export default {
@@ -205,6 +241,10 @@
 
   .red-1 {
     color: rgb(230, 41, 82);
+  }
+
+  .grey {
+    background-color: rgb(247, 247, 247);
   }
 
   .text-webkit-center {
