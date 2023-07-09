@@ -65,7 +65,7 @@
     </div>
     <div class="row text-start mt-10">
       <div class="col-md-4">
-        <img src="../assets/img/3.png" width="430" alt="teknokoz">
+        <img src="../assets/img/3.png" width="350" alt="teknokoz">
       </div>
       <div class="col-md-8 ps-5 pt-100">
         <span class="fw-medium fs-4">Yüksek Grafikler</span>
@@ -161,7 +161,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-5 mt-4">
       <div class="col">
         <div class="card h-100 border-0">
-          <img src="../assets/img/blog-1.jpg" class="card-img-top" alt="...">
+          <img src="../assets/img/blog-1.jpg" class="card-img-top" alt="teknokoz">
           <div class="card-body text-start grey">
             <h5 class="">Kurumsal Web Sitesi</h5>
             <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -171,7 +171,7 @@
       </div>
       <div class="col">
         <div class="card h-100 border-0">
-          <img src="../assets/img/blog-2.jpg" class="card-img-top" alt="...">
+          <img src="../assets/img/blog-2.jpg" class="card-img-top" alt="teknokoz">
           <div class="card-body text-start grey">
             <h5 class="">Özel Yazılım</h5>
             <p class="">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -181,7 +181,7 @@
       </div>
       <div class="col">
         <div class="card h-100 border-0">
-          <img src="../assets/img/blog-3.jpg" class="card-img-top" alt="...">
+          <img src="../assets/img/blog-3.jpg" class="card-img-top" alt="teknokoz">
           <div class="card-body text-start grey">
             <h5 class="">Dijital Market</h5>
             <p class="">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -189,6 +189,55 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="bg-pgradient-2 mt-10 mb-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1131.0135113063527!2d27.12926805229604!3d38.42011320048231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd8e3ac245af7%3A0x3585bde806b7c8e!2sKonak%2C%20Cumhuriyet%20Blv%20No%3A20%2C%2035251%20Konak%2F%C4%B0zmir!5e0!3m2!1str!2str!4v1688907105714!5m2!1str!2str" width="750" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-6 rounded-3"></iframe>
+    <div class="container">
+      <div class="row mt-5 text-start g-100">
+        <div class="col-md-6">
+          <h1 class="fw-bold">Bizimle İletişime Geçin</h1>
+          <div class="col-md-12 d-flex">
+            <div class="col-md-5 mt-4 d-flex flex-column g-20">
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Ad Soyad" aria-label="adSoyad" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Email" aria-label="email" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <input type="text" class="form-control" placeholder="Konu" aria-label="konu" aria-describedby="addon-wrapping">
+              </div>
+            </div>
+            <div class="col-md-7 mt-4 ps-4">
+              <div class="form-floating h-100">
+                <textarea class="form-control h-100" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+                <label for="floatingTextarea2">Mesaj</label>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple w-100">Gönder</button>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h1 class="fw-bold">Adres</h1>
+          <div class="row mt-4 text-start">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum.</p>
+            <div class="d-flex flex-column g-20 mt-2">
+              <span class="fw-medium">
+                <i class="fa-solid fa-location-dot"></i> Konak Rezidans, İzmir </span>
+              <span class="fw-medium">
+                <i class="fa-solid fa-phone"></i> 0503 456 78 98 </span>
+              <span class="fw-medium">
+                <i class="fa-solid fa-envelope"></i> info@teknokoz.com </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-6">
+      <span class="pb-4">© 2023 Teknokoz. Tüm Hakları Saklıdır.</span>
     </div>
   </div>
 </template>
@@ -213,6 +262,10 @@
   li {
     display: inline-block;
     margin: 0 18px;
+  }
+
+  .mt-6 {
+    margin-top: 6%;
   }
 
   .mt-10 {
@@ -255,13 +308,27 @@
     gap: 10px;
   }
 
+  .g-20 {
+    gap: 20px;
+  }
+
   .g-40 {
     gap: 40px;
+  }
+
+  .g-100 {
+    gap: 100px;
   }
 
   .bg-pgradient {
     background-image: url("../assets/img/gradient.png");
     height: 560px;
+    background-size: cover;
+  }
+
+  .bg-pgradient-2 {
+    background-image: url("../assets/img/gradient-2.png");
+    height: 380px;
     background-size: cover;
   }
 </style>
