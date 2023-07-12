@@ -1,26 +1,26 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navBlur rounded-bottom">
     <div class="container-fluid">
-      <a class="navbar-brand text-muted fw-bold fs-3 b-resp" href="#">TEKNOKOZ</a>
+      <a class="navbar-brand text-light fw-bold fs-3 b-resp" href="#">TEKNOKOZ</a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
-        <a class="text-muted text-decoration-none fs-2 fw-bold s-resp" href="#">TEKNOKOZ</a>
+        <a class="text-light text-decoration-none fs-2 fw-bold s-resp" href="#">TEKNOKOZ</a>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+            <a class="nav-link text-light fs-19 fw-medium purple-hover-3 active" aria-current="page" href="#">Anasayfa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#biz">Biz Kimiz</a>
+            <a class="nav-link text-light fs-19 fw-medium purple-hover-3" href="#biz">Biz Kimiz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#firsat">Fırsatlar</a>
+            <a class="nav-link text-light fs-19 fw-medium purple-hover-3" href="#firsat">Fırsatlar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#iletisim">İletişim</a>
+            <a class="nav-link text-light fs-19 fw-medium purple-hover-3" href="#iletisim">İletişim</a>
           </li>
-          <button type="button" class="btn btn-outline-secondary border border-secondary rounded-pill" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Destek</button>
+          <button type="button" class="btn btn-outline-secondary border border-light rounded-pill text-light fs-19 fw-medium purple-hover-2 m-12 ml-20" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Destek</button>
         </ul>
       </div>
     </div>
@@ -54,7 +54,7 @@
         <h1 class="fw-bolder mb-0">Bi Tık Daha Fazlası!</h1>
         <span class="fw-medium fs-4">Teknokoz'da</span>
         <p class="mt-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum. Vivamus tincidunt dignissim magna, non eleifend mauris viverra in. Nam suscipit neque ex, vitae accumsan urna consequat ut. Vivamus maximus fringilla est ut aliquet. Phasellus aliquam nec odio vel placerat. </p>
-        <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Hemen Bilgi Alın</button>
+        <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 fw-medium purple">Hemen Bilgi Alın</button>
       </div>
     </div>
     <a name="biz"></a>
@@ -102,21 +102,21 @@
             <i class="fa-solid fa-people-group fa-2x mb-2 purple-2"></i>
             <div class="h-zoom">
               <h2 class="fw-semibold">500+</h2>
-              <span>Mutlu Müşteri</span>
+              <span class="fw-medium">Mutlu Müşteri</span>
             </div>
           </div>
           <div>
             <i class="fa-solid fa-thumbs-up fa-2x mb-2 purple-2"></i>
             <div class="h-zoom">
               <h2 class="fw-semibold">1027+</h2>
-              <span>Tavsiye Edildi</span>
+              <span class="fw-medium">Tavsiye Edildi</span>
             </div>
           </div>
           <div>
             <i class="fa-solid fa-list fa-2x mb-2 purple-2"></i>
             <div class="h-zoom">
               <h2 class="fw-semibold">243+</h2>
-              <span>Çözümlenen Task</span>
+              <span class="fw-medium">Çözümlenen Task</span>
             </div>
           </div>
         </div>
@@ -256,7 +256,7 @@
       </div>
     </div>
   </div>
-  <div class="grey mt-6">
+  <div class="footerBlur rounded-top mt-6">
     <div class="container p-3 padding-resp-3">
       <h2 class="fw-bold text-start pt-3">Bizimle İletişime Geçin.</h2>
       <div class="col-md-12 d-flex display-resp">
@@ -286,7 +286,7 @@
       <span class="">© 2023 Teknokoz. Tüm Hakları Saklıdır.</span>
     </div>
   </div>
-  <loading v-model:active="isLoading" :can-cancel="true" :on-cancel="onCancel" color="#4B0082" :is-full-page="fullPage" />
+  <loading v-model:active="isLoading" :can-cancel="true" color="#4B0082" :is-full-page="fullPage" />
 </template>
 <script setup>
   import {
@@ -328,21 +328,33 @@
     margin: 0 18px;
   }
 
+  div#staticBackdrop {
+    backdrop-filter: blur(1.5px);
+  }
+
   @media only screen and (max-width: 1335px) {
     .slider-resp {
       display: none !important;
     }
   }
 
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 991px) {
     .s-resp {
       display: none !important;
+    }
+
+    .m-12 {
+      margin: 12px;
     }
   }
 
   @media only screen and (min-width: 992px) {
     .b-resp {
       display: none !important;
+    }
+
+    .ml-20 {
+      margin-left: 20px;
     }
   }
 
@@ -419,11 +431,19 @@
   }
 
   .purple {
-    background-color: rgb(111 133 244);
+    background-color: #4f63f8e0;
   }
 
   .purple:hover {
     background-color: #5d6bb3;
+  }
+
+  .purple-hover-2:hover {
+    background-color: #4f63f8a3;
+  }
+
+  .purple-hover-3:hover {
+    color: #373b3e !important;
   }
 
   .purple-2 {
@@ -458,6 +478,10 @@
     left: 0;
   }
 
+  .fs-19 {
+    font-size: 19px !important;
+  }
+
   .bg-pgradient {
     background-image: url("../assets/img/gradient.png");
     width: 100%;
@@ -477,5 +501,15 @@
 
   .h-zoom:hover {
     transform: scale(1.05);
+  }
+
+  .navBlur {
+    backdrop-filter: blur(20px);
+    background-color: rgb(116 119 121 / 80%) !important;
+  }
+
+  .footerBlur {
+    backdrop-filter: blur(15px);
+    background-color: rgb(116 119 121 / 10%) !important;
   }
 </style>
