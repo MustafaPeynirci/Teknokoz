@@ -20,5 +20,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #747779;
+  background: url("./assets/img/background.png");
+  background-size: contain;
+  padding-top: 10%;  
+}
+
+@media only screen and (max-width: 992px) {
+  #app {
+    background-size: cover;
+  }
 }
 </style>

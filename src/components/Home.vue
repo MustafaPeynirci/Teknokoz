@@ -1,13 +1,17 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navBlur rounded-bottom">
     <div class="container-fluid">
-      <a class="navbar-brand text-light fw-bold fs-3 b-resp" href="#">TEKNOKOZ</a>
+      <a class="navbar-brand text-light fw-bold fs-3 b-resp" href="#">
+        <img src="../assets/img/logo.png" width="130" alt="teknokoz">
+      </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
-        <a class="text-light text-decoration-none fs-2 fw-bold s-resp" href="#">TEKNOKOZ</a>
-        <ul class="navbar-nav">
+        <a class="text-light text-decoration-none fs-2 fw-bold s-resp" href="#">
+          <img src="../assets/img/logo.png" width="200" alt="teknokoz">
+        </a>
+        <ul class="navbar-nav align-resp">
           <li class="nav-item">
             <a class="nav-link text-light fs-19 fw-medium purple-hover-3 active" aria-current="page" href="#">Anasayfa</a>
           </li>
@@ -20,12 +24,12 @@
           <li class="nav-item">
             <a class="nav-link text-light fs-19 fw-medium purple-hover-3" href="#iletisim">İletişim</a>
           </li>
-          <button type="button" class="btn btn-outline-secondary border border-light rounded-pill text-light fs-19 fw-medium purple-hover-2 m-12 ml-20" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Destek</button>
+          <button type="button" class="btn btn-outline-secondary border border-light rounded-pill d-flex justify-content-center align-items-center h-38 text-light fs-19 fw-medium purple-hover-2 m-12 ml-20" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Destek</button>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container mt-10 mb-5 padding-resp-3">
+  <div class="container mb-5 padding-resp-3">
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -47,10 +51,10 @@
       </div>
     </div>
     <div class="row text-start">
-      <div class="col-md-5">
+      <div class="col-md-5 mt-15-resp">
         <img src="../assets/img/1.png" class="w-100" alt="teknokoz">
       </div>
-      <div class="col-md-7 pt-100">
+      <div class="col-md-7 pt-100 p-30">
         <h1 class="fw-bolder mb-0">Bi Tık Daha Fazlası!</h1>
         <span class="fw-medium fs-4">Teknokoz'da</span>
         <p class="mt-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum. Vivamus tincidunt dignissim magna, non eleifend mauris viverra in. Nam suscipit neque ex, vitae accumsan urna consequat ut. Vivamus maximus fringilla est ut aliquet. Phasellus aliquam nec odio vel placerat. </p>
@@ -59,7 +63,7 @@
     </div>
     <a name="biz"></a>
     <div class="row text-start mt-10 display-flex-resp align-items-center">
-      <div class="col-md-7 pe-5 pt-100">
+      <div class="col-md-7 pe-5 pt-100 p-30">
         <span class="fw-medium fs-4">Tecrübeyle Sabit</span>
         <h1 class="fw-bolder ">Kusursuz <span class="red-1">Performans</span>
         </h1>
@@ -91,7 +95,7 @@
       <div class="col-md-3 img-resp">
         <img src="../assets/img/3.png" class="w-100" alt="teknokoz">
       </div>
-      <div class="col-md-9 ps-5 pt-100">
+      <div class="col-md-9 ps-5 pt-100 p-30">
         <span class="fw-medium fs-4">Yüksek Grafikler</span>
         <h1 class="fw-bolder ">
           <span class="text-warning">Mutlu</span> Müşteriler
@@ -123,7 +127,7 @@
       </div>
     </div>
     <div class="row text-start mt-10 pb-4 align-items-center justify-content-center">
-      <div class="col-md-7 pe-5 pt-100">
+      <div class="col-md-7 pe-5 pt-100 p-30">
         <span class="fw-medium fs-4">Kullanıcı Deneyimi</span>
         <h1 class="fw-bolder ">Başarılı <span class="text-success">Portföy</span>
         </h1>
@@ -196,7 +200,7 @@
     <h1 class="fw-bolder mb-0">Fırsatları Değerlendirin!</h1>
     <span class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
     <div class="row row-cols-1 row-cols-md-3 g-5 mt-3 padding-resp-2">
-      <div class="col">
+      <div class="col mt-15-resp">
         <div class="card h-zoom h-100 border-0">
           <img src="../assets/img/blog-1.jpg" class="card-img-top" alt="teknokoz">
           <div class="card-body text-start grey">
@@ -356,9 +360,13 @@
     .ml-20 {
       margin-left: 20px;
     }
+
+    .align-resp {
+      align-items: center;
+    }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     .display-resp {
       display: block !important;
     }
@@ -403,6 +411,14 @@
     .img-resp-2 {
       width: 70%;
       margin-top: 50px;
+    }
+
+    .p-30 {
+      padding: 30px !important;
+    }
+
+    .mt-15-resp {
+      margin-top: 15px !important;
     }
   }
 
@@ -482,16 +498,14 @@
     font-size: 19px !important;
   }
 
+  .h-38 {
+    height: 38px;
+  }
+
   .bg-pgradient {
     background-image: url("../assets/img/gradient.png");
     width: 100%;
     height: 560px;
-    background-size: cover;
-  }
-
-  .bg-pgradient-2 {
-    background-image: url("../assets/img/gradient-2.png");
-    height: 380px;
     background-size: cover;
   }
 
@@ -505,7 +519,7 @@
 
   .navBlur {
     backdrop-filter: blur(20px);
-    background-color: rgb(116 119 121 / 80%) !important;
+    background-color: rgb(116 119 121 / 70%) !important;
   }
 
   .footerBlur {
