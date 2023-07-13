@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navBlur rounded-bottom">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navBlur shadow rounded-bottom">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold fs-3 b-resp" href="#">
         <img src="../assets/img/logo.png" width="130" alt="teknokoz">
@@ -13,18 +13,18 @@
         </a>
         <ul class="navbar-nav align-resp">
           <li class="nav-item">
-            <a class="nav-link fs-19 fw-medium purple-hover-3 active" aria-current="page" href="#">Anasayfa</a>
+            <a class="nav-link fs-19 fw-medium purple-hover-3 fs-unset" aria-current="page" href="#">Anasayfa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-19 fw-medium purple-hover-3" href="#biz">Biz Kimiz</a>
+            <a class="nav-link fs-19 fw-medium purple-hover-3 fs-unset" href="#biz">Biz Kimiz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-19 fw-medium purple-hover-3" href="#firsat">Fırsatlar</a>
+            <a class="nav-link fs-19 fw-medium purple-hover-3 fs-unset" href="#firsat">Fırsatlar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-19 fw-medium purple-hover-3" href="#iletisim">İletişim</a>
+            <a class="nav-link fs-19 fw-medium purple-hover-3 fs-unset" href="#iletisim">İletişim</a>
           </li>
-          <button type="button" class="btn btn-outline-secondary border border-dark rounded-pill d-flex justify-content-center align-items-center h-38 fs-19 fw-medium m-12 ml-20" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Destek</button>
+          <button type="button" class="btn btn-outline-secondary border border-dark rounded-pill d-flex justify-content-center align-items-center h-38 h-33 fs-unset fs-19 fw-medium m-12 ml-20" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Destek</button>
         </ul>
       </div>
     </div>
@@ -40,9 +40,11 @@
           <div class="modal-body mx-auto">
             <div class="d-flex flex-column g-20 mt-2 pb-2 text-start">
               <span class="fw-medium">
-                <i class="fa-solid fa-location-dot pe-2"></i> Konak Rezidans, İzmir </span>
+                <i class="fa-solid fa-location-dot pe-2"></i> Konak, İzmir </span>
               <a class="fw-medium text-decoration-none grey-color" href="tel:05333108453">
                 <i class="fa-solid fa-phone pe-2"></i> 0533 310 84 53 </a>
+              <a class="fw-medium text-decoration-none grey-color" href="tel:05441062138">
+                <i class="fa-solid fa-phone-volume pe-2"></i> 0544 106 21 38 </a>
               <a class="fw-medium text-decoration-none grey-color" href="mailto:info@teknokoz.com">
                 <i class="fa-solid fa-envelope pe-2"></i> info@teknokoz.com </a>
             </div>
@@ -147,7 +149,7 @@
               <h1 class="fw-bold text-white pt-4">Sizden Gelenler</h1>
               <div class="carousel-item active">
                 <div class="row fw-normal">
-                  <p class="text-white mt-4"> Etkileyici bir hizmet sunuyor. İşbirliği içinde çalıştığımız süre boyunca, yazılım ihtiyaçlarımızı tam anlamıyla anlamışlar ve harika bir çözüm sunmuşlardır. Ekibin uzmanlığı ve tecrübesi, projemizin başarılı bir şekilde tamamlanmasını sağladı. İletişimleri mükemmel ve sürekli güncellemeler sağladılar. Proje zamanında ve bütçe dahilinde teslim edildi. Ayrıca, müşteri odaklı yaklaşımları ve kalite odaklı çalışmaları takdire şayan. Bu yazılım şirketiyle çalışmak gerçekten keyifli bir deneyim oldu ve gelecekteki projelerimizde de tereddütsüz olarak tercih edeceğimiz bir ortak olacaklar. Kesinlikle öneriyorum!</p>
+                  <p class="text-white mt-4"> Etkileyici bir hizmet sunuyor. İşbirliği içinde çalıştığımız süre boyunca, yazılım ihtiyaçlarımızı tam anlamıyla anlamışlar ve harika bir çözüm sunmuşlardır. Ekibin uzmanlığı ve tecrübesi, projemizin başarılı bir şekilde tamamlanmasını sağladı. İletişimleri mükemmel ve sürekli güncellemeler sağladılar. Proje zamanında ve bütçe dahilinde teslim edildi. Ayrıca, müşteri odaklı yaklaşımları ve kalite odaklı çalışmaları takdire şayan.</p>
                   <span class="text-white mt-4"> Alev Yıldırım </span>
                   <span class="text-danger"> Designer, Zero </span>
                   <div class="d-flex justify-content-center g-10 mt-2">
@@ -161,7 +163,7 @@
               </div>
               <div class="carousel-item">
                 <div class="row fw-normal">
-                  <p class="text-white mt-4"> Proje süreci boyunca iletişimleri sürekli ve etkiliydi, her adımda bizi bilgilendirdiler. Proje zamanında tamamlandı ve kalite standartlarımızı tam anlamıyla karşıladı. Ekibin teknik yetenekleri ve yaratıcılıkları, projemizi daha da geliştirmemize yardımcı oldu. Ayrıca, sonrasında sağladıkları destek ve müşteri odaklı yaklaşımları, şirketin profesyonelliğini ve iş ahlakını yansıtıyor. Bu yazılım şirketiyle çalışmak, başarılı projelerin ve müşteri memnuniyetinin garantisidir. Tavsiye etmekten mutluluk duyuyorum! </p>
+                  <p class="text-white mt-4"> Proje süreci boyunca iletişimleri sürekli ve etkiliydi, her adımda bizi bilgilendirdiler. Proje zamanında tamamlandı ve kalite standartlarımızı tam anlamıyla karşıladı. Ekibin teknik yetenekleri ve yaratıcılıkları, projemizi daha da geliştirmemize yardımcı oldu. Ayrıca, sonrasında sağladıkları destek ve müşteri odaklı yaklaşımları, şirketin profesyonelliğini ve iş ahlakını yansıtıyor. </p>
                   <span class="text-white mt-4"> Murat Kale </span>
                   <span class="text-danger"> Business Analyst, Craft </span>
                   <div class="d-flex justify-content-center g-10 mt-2">
@@ -175,7 +177,7 @@
               </div>
               <div class="carousel-item">
                 <div class="row fw-normal">
-                  <p class="text-white mt-4"> İhtiyaçlarımızı tam olarak anlayarak, bize mükemmel bir çözüm sağladılar. Projemiz zamanında ve bütçe dahilinde tamamlandı ve sonuçlar beklediğimizin ötesine geçti. Ekibin teknik yetenekleri ve yaratıcılığı, işimizi daha verimli hale getirmemize yardımcı oldu. Ayrıca, müşteri memnuniyetine verdikleri önem ve sonrasında sağladıkları destek, şirketi gerçekten özel kılıyor. Bu yazılım şirketiyle çalışmak, başarılı projelerin garantisidir. </p>
+                  <p class="text-white mt-4"> İhtiyaçlarımızı tam olarak anlayarak, bize mükemmel bir çözüm sağladılar. Projemiz zamanında ve bütçe dahilinde tamamlandı ve sonuçlar beklediğimizin ötesine geçti. Ekibin teknik yetenekleri ve yaratıcılığı, işimizi daha verimli hale getirmemize yardımcı oldu. Ayrıca, müşteri memnuniyetine verdikleri önem ve sonrasında sağladıkları destek, şirketi gerçekten özel kılıyor. </p>
                   <span class="text-white mt-4"> Can Meydan </span>
                   <span class="text-danger"> Computer Engineer, Upliys </span>
                   <div class="d-flex justify-content-center g-10 mt-2">
@@ -201,7 +203,7 @@
     <span class="mt-3 fw-medium">Size en uygun çözümü seçin.</span>
     <div class="row row-cols-1 row-cols-md-3 g-5 mt-3 padding-resp-2">
       <div class="col mt-15-resp">
-        <div class="card h-zoom h-100 border-0">
+        <div class="card h-zoom h-100 border-0 shadow">
           <img src="../assets/img/blog-1.jpg" class="card-img-top" alt="teknokoz">
           <div class="card-body text-start white">
             <h5 class="">Kurumsal Web Sitesi</h5>
@@ -213,7 +215,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-zoom h-100 border-0">
+        <div class="card h-zoom h-100 border-0 shadow">
           <img src="../assets/img/blog-2.jpg" class="card-img-top" alt="teknokoz">
           <div class="card-body text-start white">
             <h5 class="">Özel Yazılım</h5>
@@ -225,7 +227,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card h-zoom h-100 border-0">
+        <div class="card h-zoom h-100 border-0 shadow">
           <img src="../assets/img/blog-3.jpg" class="card-img-top" alt="teknokoz">
           <div class="card-body text-start white">
             <h5 class="">Dijital Market</h5>
@@ -250,9 +252,11 @@
           <p> Müşteri memnuniyeti ve ihtiyaçlarınızı karşılama konusunda en üst düzeyde özenle çalışıyoruz. Birebir iletişim kurmak, ihtiyaçlarınızı daha iyi anlamak ve size özel çözümler sunmak için en etkili yoldur. Sizi ofisimizde görmekten mutluluk duyarız!</p>
           <div class="d-flex flex-column g-20 mt-2">
             <span class="fw-medium">
-              <i class="fa-solid fa-location-dot pe-2"></i> Konak Rezidans, İzmir </span>
+              <i class="fa-solid fa-location-dot pe-2"></i> Konak, İzmir </span>
             <a class="fw-medium text-decoration-none grey-color" href="tel:05333108453">
               <i class="fa-solid fa-phone pe-2"></i> 0533 310 84 53 </a>
+            <a class="fw-medium text-decoration-none grey-color" href="tel:05441062138">
+              <i class="fa-solid fa-phone-volume pe-2"></i> 0544 106 21 38 </a>
             <a class="fw-medium text-decoration-none grey-color" href="mailto:info@teknokoz.com">
               <i class="fa-solid fa-envelope pe-2"></i> info@teknokoz.com </a>
           </div>
@@ -420,6 +424,14 @@
     .mt-15-resp {
       margin-top: 15px !important;
     }
+
+    .fs-unset {
+      font-size: unset !important;
+    }
+
+    .h-33 {
+      height: 33px !important;
+    }
   }
 
   .navbar-toggler:focus {
@@ -499,7 +511,7 @@
   }
 
   .fs-19 {
-    font-size: 19px !important;
+    font-size: 19px;
   }
 
   .h-38 {
@@ -524,11 +536,14 @@
   .navBlur {
     backdrop-filter: blur(20px);
     background-color: #f8f9fade !important;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
 
   .footerBlur {
     backdrop-filter: blur(15px);
     background-color: rgb(116 119 121 / 10%) !important;
+  }
+
+  .shadow {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
   }
 </style>
