@@ -1,30 +1,30 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navBlur rounded-bottom">
     <div class="container-fluid">
-      <a class="navbar-brand text-light fw-bold fs-3 b-resp" href="#">
+      <a class="navbar-brand fw-bold fs-3 b-resp" href="#">
         <img src="../assets/img/logo.png" width="130" alt="teknokoz">
       </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
-        <a class="text-light text-decoration-none fs-2 fw-bold s-resp" href="#">
+        <a class="text-decoration-none fs-2 fw-bold s-resp" href="#">
           <img src="../assets/img/logo.png" width="200" alt="teknokoz">
         </a>
         <ul class="navbar-nav align-resp">
           <li class="nav-item">
-            <a class="nav-link text-light fs-19 fw-medium purple-hover-3 active" aria-current="page" href="#">Anasayfa</a>
+            <a class="nav-link fs-19 fw-medium purple-hover-3 active" aria-current="page" href="#">Anasayfa</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light fs-19 fw-medium purple-hover-3" href="#biz">Biz Kimiz</a>
+            <a class="nav-link fs-19 fw-medium purple-hover-3" href="#biz">Biz Kimiz</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light fs-19 fw-medium purple-hover-3" href="#firsat">Fırsatlar</a>
+            <a class="nav-link fs-19 fw-medium purple-hover-3" href="#firsat">Fırsatlar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light fs-19 fw-medium purple-hover-3" href="#iletisim">İletişim</a>
+            <a class="nav-link fs-19 fw-medium purple-hover-3" href="#iletisim">İletişim</a>
           </li>
-          <button type="button" class="btn btn-outline-secondary border border-light rounded-pill d-flex justify-content-center align-items-center h-38 text-light fs-19 fw-medium purple-hover-2 m-12 ml-20" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Destek</button>
+          <button type="button" class="btn btn-outline-secondary border border-dark rounded-pill d-flex justify-content-center align-items-center h-38 fs-19 fw-medium m-12 ml-20" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Destek</button>
         </ul>
       </div>
     </div>
@@ -40,11 +40,11 @@
           <div class="modal-body mx-auto">
             <div class="d-flex flex-column g-20 mt-2 pb-2 text-start">
               <span class="fw-medium">
-                <i class="fa-solid fa-location-dot"></i> Konak Rezidans, İzmir </span>
-              <span class="fw-medium">
-                <i class="fa-solid fa-phone"></i> 0503 456 78 98 </span>
-              <span class="fw-medium">
-                <i class="fa-solid fa-envelope"></i> info@teknokoz.com </span>
+                <i class="fa-solid fa-location-dot pe-2"></i> Konak Rezidans, İzmir </span>
+              <a class="fw-medium text-decoration-none grey-color" href="tel:05333108453">
+                <i class="fa-solid fa-phone pe-2"></i> 0533 310 84 53 </a>
+              <a class="fw-medium text-decoration-none grey-color" href="mailto:info@teknokoz.com">
+                <i class="fa-solid fa-envelope pe-2"></i> info@teknokoz.com </a>
             </div>
           </div>
         </div>
@@ -57,8 +57,8 @@
       <div class="col-md-7 pt-100 p-30">
         <h1 class="fw-bolder mb-0">Bi Tık Daha Fazlası!</h1>
         <span class="fw-medium fs-4">Teknokoz'da</span>
-        <p class="mt-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum. Vivamus tincidunt dignissim magna, non eleifend mauris viverra in. Nam suscipit neque ex, vitae accumsan urna consequat ut. Vivamus maximus fringilla est ut aliquet. Phasellus aliquam nec odio vel placerat. </p>
-        <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 fw-medium purple">Hemen Bilgi Alın</button>
+        <p class="mt-3"> Biz, yazılım hizmetleri alanında lider bir şirket olarak, işletmenizin dijital dönüşümünü sağlamak için gelişmiş çözümler sunuyoruz. Profesyonel ekibimiz, işletmenizin ihtiyaçlarına uygun özelleştirilmiş yazılım hizmetleriyle size rekabet avantajı sağlamayı hedefliyor. İşletmenizin dijital dünyada başarılı olması için sizinle yakın işbirliği içinde çalışıyoruz. İhtiyaçlarınızı anlamak ve hedeflerinize ulaşmanızı sağlamak için birinci sınıf yazılım çözümleri sunuyoruz. Web tabanlı uygulamalar, mobil uygulamalar, özel yazılımlar, veritabanı yönetimi ve daha birçok alanda uzmanlaşmış ekibimizle size en uygun çözümü sunmak için buradayız. </p>
+        <a href="#iletisim" type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 fw-medium purple">Hemen Bilgi Alın</a>
       </div>
     </div>
     <a name="biz"></a>
@@ -67,27 +67,27 @@
         <span class="fw-medium fs-4">Tecrübeyle Sabit</span>
         <h1 class="fw-bolder ">Kusursuz <span class="red-1">Performans</span>
         </h1>
-        <p class="mt-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum. Vivamus tincidunt dignissim magna, non eleifend mauris viverra in. Nam suscipit neque ex, vitae accumsan urna consequat ut. Vivamus maximus fringilla est ut aliquet. Phasellus aliquam nec odio vel placerat. </p>
+        <p class="mt-3"> Amacımız, müşterilerimize en üst düzeyde memnuniyet sağlayarak onların ihtiyaçlarını karşılamaktır. Güçlü bir geçmişe ve deneyime sahip olarak, hizmetlerimizde mükemmeliyeti ve profesyonelliği hedefliyoruz. Sektördeki uzmanlığımızı ve bilgimizi, müşterilerimize en iyi şekilde yansıtmaktayız. Tecrübe, başarının anahtarıdır. Yıllar boyunca kazandığımız birikim ve sektördeki deneyimimiz, kusursuz bir performans sunmamıza yardımcı olmaktadır. İşlerimizi titizlikle ve dikkatle yaparak müşterilerimize güven veriyoruz.</p>
       </div>
       <div class="col-md-5 img-resp-2">
         <img src="../assets/img/2.png" class="w-100" alt="teknokoz">
       </div>
       <div class="d-flex mt-10 text-webkit-center display-resp">
         <div class="h-zoom">
-          <i class="fa-solid fa-file fa-2x mb-4 text-body"></i>
-          <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <i class="fa-solid fa-circle-check fa-2x mb-4 text-body"></i>
+          <p class="w-75">İşlerimizi titizlikle ve dikkatle yaparak müşterilerimize güven veriyoruz.</p>
         </div>
         <div class="h-zoom">
           <i class="fa-solid fa-code fa-2x mb-4 text-body"></i>
-          <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <p class="w-75">Ekip üyelerimiz, kendi alanlarında uzmanlaşmış profesyonellerden oluşmaktadır.</p>
         </div>
         <div class="h-zoom">
-          <i class="fa-solid fa-gear fa-2x mb-4 text-body"></i>
-          <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <i class="fa-solid fa-comments fa-2x mb-4 text-body"></i>
+          <p class="w-75">İhtiyaçlarınızı ve beklentilerinizi dikkate alarak, size en uygun çözümleri sunuyoruz.</p>
         </div>
         <div class="h-zoom">
-          <i class="fa-solid fa-pen-to-square fa-2x mb-4 text-body"></i>
-          <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing </p>
+          <i class="fa-solid fa-wand-magic-sparkles fa-2x mb-4 text-body"></i>
+          <p class="w-75">İşimizi zamanında ve hatasız bir şekilde tamamlamak için gereken çabayı gösteriyoruz.</p>
         </div>
       </div>
     </div>
@@ -100,7 +100,7 @@
         <h1 class="fw-bolder ">
           <span class="text-warning">Mutlu</span> Müşteriler
         </h1>
-        <p class="mt-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum. Vivamus tincidunt dignissim magna, non eleifend mauris viverra in. Nam suscipit neque ex, vitae accumsan urna consequat ut. Vivamus maximus fringilla est ut aliquet. Phasellus aliquam nec odio vel placerat. </p>
+        <p class="mt-3"> İyi tasarlanmış bir web sitesi, işletmenizin dijital varlığını temsil eder ve potansiyel müşterilere marka değerini yansıtır. Web siteleri, kullanıcı deneyimi, işlevsellik ve görsel çekicilik gibi faktörlerle müşterilerin memnuniyetini etkiler. Bir web sitesinin görsel çekiciliği, kullanıcıların sitenizde daha fazla zaman geçirmesini ve işletmenizin ürünlerine veya hizmetlerine daha olumlu bir şekilde bağlanmasını sağlar. Bu nedenle, yüksek kaliteli grafikler web sitenizin etkileyici bir şekilde sunulmasında büyük bir rol oynar.</p>
         <div class="d-flex g-40 mt-5 display-resp">
           <div>
             <i class="fa-solid fa-people-group fa-2x mb-2 purple-2"></i>
@@ -131,7 +131,7 @@
         <span class="fw-medium fs-4">Kullanıcı Deneyimi</span>
         <h1 class="fw-bolder ">Başarılı <span class="text-success">Portföy</span>
         </h1>
-        <p class="mt-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum. Vivamus tincidunt dignissim magna, non eleifend mauris viverra in. Nam suscipit neque ex, vitae accumsan urna consequat ut. Vivamus maximus fringilla est ut aliquet. Phasellus aliquam nec odio vel placerat. </p>
+        <p class="mt-3"> Web sitelerimiz, kullanıcıların isteklerini, ihtiyaçlarını ve beklentilerini göz önünde bulundurarak onlara mükemmel bir deneyim sunmayı amaçlar. İster küçük bir işletme sahibi olun, ister büyük bir şirketin temsilcisi, size özel, kullanıcı dostu ve estetik açıdan etkileyici bir web sitesi oluşturmak için buradayız. İnsanların web sitenizi ziyaret ettiğinde kolayca gezinebilmeleri, bilgilere hızlı bir şekilde erişebilmeleri ve istedikleri eylemleri gerçekleştirebilmeleri önemlidir. Profesyonel ekibimizle, her projemizde kullanıcı deneyimini önceliklendiriyoruz ve kullanıcıların web sitenizi ziyaret ettiklerinde olumlu bir deneyim yaşamalarını sağlıyoruz. </p>
       </div>
       <div class="col-md-5 img-resp-2">
         <img src="../assets/img/4.png" class="w-100" alt="teknokoz">
@@ -147,9 +147,9 @@
               <h1 class="fw-bold text-white pt-4">Sizden Gelenler</h1>
               <div class="carousel-item active">
                 <div class="row fw-normal">
-                  <p class="text-white mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum. Vivamus tincidunt dignissim magna, non eleifend mauris viverra in. Nam suscipit neque ex, vitae accumsan urna consequat ut. Vivamus maximus fringilla est ut aliquet. Phasellus aliquam nec odio vel placerat. </p>
+                  <p class="text-white mt-4"> Etkileyici bir hizmet sunuyor. İşbirliği içinde çalıştığımız süre boyunca, yazılım ihtiyaçlarımızı tam anlamıyla anlamışlar ve harika bir çözüm sunmuşlardır. Ekibin uzmanlığı ve tecrübesi, projemizin başarılı bir şekilde tamamlanmasını sağladı. İletişimleri mükemmel ve sürekli güncellemeler sağladılar. Proje zamanında ve bütçe dahilinde teslim edildi. Ayrıca, müşteri odaklı yaklaşımları ve kalite odaklı çalışmaları takdire şayan. Bu yazılım şirketiyle çalışmak gerçekten keyifli bir deneyim oldu ve gelecekteki projelerimizde de tereddütsüz olarak tercih edeceğimiz bir ortak olacaklar. Kesinlikle öneriyorum!</p>
                   <span class="text-white mt-4"> Alev Yıldırım </span>
-                  <span class="text-danger"> Designer, Otosan </span>
+                  <span class="text-danger"> Designer, Zero </span>
                   <div class="d-flex justify-content-center g-10 mt-2">
                     <i class="fa-solid fa-star text-warning"></i>
                     <i class="fa-solid fa-star text-warning"></i>
@@ -161,7 +161,7 @@
               </div>
               <div class="carousel-item">
                 <div class="row fw-normal">
-                  <p class="text-white mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum. Vivamus tincidunt dignissim magna, non eleifend mauris viverra in. Nam suscipit neque ex, vitae accumsan urna consequat ut. Vivamus maximus fringilla est ut aliquet. Phasellus aliquam nec odio vel placerat. </p>
+                  <p class="text-white mt-4"> Proje süreci boyunca iletişimleri sürekli ve etkiliydi, her adımda bizi bilgilendirdiler. Proje zamanında tamamlandı ve kalite standartlarımızı tam anlamıyla karşıladı. Ekibin teknik yetenekleri ve yaratıcılıkları, projemizi daha da geliştirmemize yardımcı oldu. Ayrıca, sonrasında sağladıkları destek ve müşteri odaklı yaklaşımları, şirketin profesyonelliğini ve iş ahlakını yansıtıyor. Bu yazılım şirketiyle çalışmak, başarılı projelerin ve müşteri memnuniyetinin garantisidir. Tavsiye etmekten mutluluk duyuyorum! </p>
                   <span class="text-white mt-4"> Murat Kale </span>
                   <span class="text-danger"> Business Analyst, Craft </span>
                   <div class="d-flex justify-content-center g-10 mt-2">
@@ -175,9 +175,9 @@
               </div>
               <div class="carousel-item">
                 <div class="row fw-normal">
-                  <p class="text-white mt-4"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum. Vivamus tincidunt dignissim magna, non eleifend mauris viverra in. Nam suscipit neque ex, vitae accumsan urna consequat ut. Vivamus maximus fringilla est ut aliquet. Phasellus aliquam nec odio vel placerat. </p>
+                  <p class="text-white mt-4"> İhtiyaçlarımızı tam olarak anlayarak, bize mükemmel bir çözüm sağladılar. Projemiz zamanında ve bütçe dahilinde tamamlandı ve sonuçlar beklediğimizin ötesine geçti. Ekibin teknik yetenekleri ve yaratıcılığı, işimizi daha verimli hale getirmemize yardımcı oldu. Ayrıca, müşteri memnuniyetine verdikleri önem ve sonrasında sağladıkları destek, şirketi gerçekten özel kılıyor. Bu yazılım şirketiyle çalışmak, başarılı projelerin garantisidir. </p>
                   <span class="text-white mt-4"> Can Meydan </span>
-                  <span class="text-danger"> Computer Engineer, Sodexo </span>
+                  <span class="text-danger"> Computer Engineer, Upliys </span>
                   <div class="d-flex justify-content-center g-10 mt-2">
                     <i class="fa-solid fa-star text-warning"></i>
                     <i class="fa-solid fa-star text-warning"></i>
@@ -198,41 +198,41 @@
   <a name="firsat"></a>
   <div class="container mt-6 mb-5 margin-resp-2 padding-resp-3">
     <h1 class="fw-bolder mb-0">Fırsatları Değerlendirin!</h1>
-    <span class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    <span class="mt-3 fw-medium">Size en uygun çözümü seçin.</span>
     <div class="row row-cols-1 row-cols-md-3 g-5 mt-3 padding-resp-2">
       <div class="col mt-15-resp">
         <div class="card h-zoom h-100 border-0">
           <img src="../assets/img/blog-1.jpg" class="card-img-top" alt="teknokoz">
-          <div class="card-body text-start grey">
+          <div class="card-body text-start white">
             <h5 class="">Kurumsal Web Sitesi</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="">Şirketinizin dijital kimliğini temsil eder ve müşterilerinize, ortaklarınıza ve potansiyel müşterilerinize bilgi sunmak için kullanabilirsiniz. Kurumsal web sitesi hizmeti, işletmenizin profesyonel bir çevrimiçi varlık oluşturmasına yardımcı olur. Marka tanınırlığını artırır ve müşterilerin şirketle bağlantı kurmalarını sağlar. Ziyaretçilere şirket hakkında detaylı bilgi sunar ve onlarla etkileşime geçme imkanı sağlar.</p>
           </div>
-          <div class="card-footer border-0 pb-3 text-start">
-            <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Hemen Bilgi Alın</button>
+          <div class="card-footer white border-0 pb-3 text-start">
+            <a href="#iletisim" type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Bilgi Alın</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-zoom h-100 border-0">
           <img src="../assets/img/blog-2.jpg" class="card-img-top" alt="teknokoz">
-          <div class="card-body text-start grey">
+          <div class="card-body text-start white">
             <h5 class="">Özel Yazılım</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <p class="">Yazılım geliştirme sürecinde size tam kontrol sağlıyoruz. İhtiyaçlarınıza uygun özelliklerin eklenmesi, kullanıcı dostu arayüzlerin oluşturulması ve güvenlik önlemlerinin alınması konularında hassas bir şekilde çalışıyoruz. Amacımız, işletmenizin verimliliğini artırmak ve rekabet avantajı sağlamak için size özel bir yazılım çözümü sunmaktır.</p>
           </div>
-          <div class="card-footer border-0 pb-3 text-start">
-            <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Hemen Bilgi Alın</button>
+          <div class="card-footer white border-0 pb-3 text-start">
+            <a href="#iletisim" type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Bilgi Alın</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-zoom h-100 border-0">
           <img src="../assets/img/blog-3.jpg" class="card-img-top" alt="teknokoz">
-          <div class="card-body text-start grey">
+          <div class="card-body text-start white">
             <h5 class="">Dijital Market</h5>
-            <p class="">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <p class="">Dijital pazarlama konusundaki uzman ekibimiz, işletmenizin özel ihtiyaçlarına uygun çözümler sunmak için sürekli olarak güncel trendleri takip etmekte ve yenilikçi stratejiler geliştirmektedir. Web sitesi tasarımı ve geliştirme, arama motoru optimizasyonu (SEO), sosyal medya yönetimi, içerik pazarlaması, reklam kampanyaları ve analiz gibi geniş bir hizmet yelpazemizle işletmenizin dijital varlığını güçlendiriyoruz.</p>
           </div>
-          <div class="card-footer border-0 pb-3 text-start">
-            <button type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Hemen Bilgi Alın</button>
+          <div class="card-footer white border-0 pb-3 text-start">
+            <a href="#iletisim" type="button" class="btn btn-secondary border border-secondary rounded-pill fs-14 purple">Bilgi Alın</a>
           </div>
         </div>
       </div>
@@ -247,14 +247,14 @@
       <div class="col-md-6 ps-5 margin-resp">
         <h1 class="fw-bold">Adres</h1>
         <div class="row mt-4 text-start">
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo neque, suscipit nec ligula vitae, feugiat venenatis tellus. In molestie ut massa quis dictum.</p>
+          <p> Müşteri memnuniyeti ve ihtiyaçlarınızı karşılama konusunda en üst düzeyde özenle çalışıyoruz. Birebir iletişim kurmak, ihtiyaçlarınızı daha iyi anlamak ve size özel çözümler sunmak için en etkili yoldur. Sizi ofisimizde görmekten mutluluk duyarız!</p>
           <div class="d-flex flex-column g-20 mt-2">
             <span class="fw-medium">
-              <i class="fa-solid fa-location-dot"></i> Konak Rezidans, İzmir </span>
-            <span class="fw-medium">
-              <i class="fa-solid fa-phone"></i> 0503 456 78 98 </span>
-            <span class="fw-medium">
-              <i class="fa-solid fa-envelope"></i> info@teknokoz.com </span>
+              <i class="fa-solid fa-location-dot pe-2"></i> Konak Rezidans, İzmir </span>
+            <a class="fw-medium text-decoration-none grey-color" href="tel:05333108453">
+              <i class="fa-solid fa-phone pe-2"></i> 0533 310 84 53 </a>
+            <a class="fw-medium text-decoration-none grey-color" href="mailto:info@teknokoz.com">
+              <i class="fa-solid fa-envelope pe-2"></i> info@teknokoz.com </a>
           </div>
         </div>
       </div>
@@ -470,8 +470,12 @@
     color: rgb(230, 41, 82);
   }
 
-  .grey {
-    background-color: rgb(247, 247, 247);
+  .white {
+    background-color: #fff;
+  }
+
+  .grey-color {
+    color: #747779;
   }
 
   .text-webkit-center {
@@ -519,7 +523,8 @@
 
   .navBlur {
     backdrop-filter: blur(20px);
-    background-color: rgb(116 119 121 / 70%) !important;
+    background-color: #f8f9fade !important;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
 
   .footerBlur {
