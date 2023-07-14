@@ -364,7 +364,14 @@
       From: "info@teknokoz.com",
       Subject: mailBody.value.mail,
       Body: mail
-    }).then($toast.success('Mailiniz başarıyla gönderildi.', {
+      }).then(
+      mailBody.value = {
+        name: '',
+        mail: '',
+        subject: '',
+        message: '',
+      },
+      $toast.success('Mailiniz başarıyla gönderildi.', {
       position: 'bottom-right',
     }));
   }
