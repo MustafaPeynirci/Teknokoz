@@ -270,24 +270,24 @@
       <div class="col-md-12 d-flex display-resp">
         <div class="col-md-5 mt-4 d-flex flex-column g-20">
           <div class="input-group flex-nowrap">
-            <input type="text" class="form-control" placeholder="Ad Soyad" aria-label="adSoyad" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" v-model="mailBody.name" placeholder="Ad Soyad" aria-label="adSoyad" aria-describedby="addon-wrapping">
           </div>
           <div class="input-group flex-nowrap">
-            <input type="text" class="form-control" placeholder="Email" aria-label="email" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" v-model="mailBody.mail" placeholder="Email" aria-label="email" aria-describedby="addon-wrapping">
           </div>
           <div class="input-group flex-nowrap">
-            <input type="text" class="form-control" placeholder="Konu" aria-label="konu" aria-describedby="addon-wrapping">
+            <input type="text" class="form-control" v-model="mailBody.subject" placeholder="Konu" aria-label="konu" aria-describedby="addon-wrapping">
           </div>
         </div>
         <div class="col-md-7 mt-4 ps-4 padding-resp">
           <div class="form-floating h-100">
-            <textarea class="form-control h-100" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+            <textarea class="form-control h-100" v-model="mailBody.message" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
             <label for="floatingTextarea2">Mesaj</label>
           </div>
         </div>
       </div>
       <div class="mt-3">
-        <button type="button" class="btn btn-secondary border border-secondary rounded-pill purple w-100">Gönder</button>
+        <button type="button" @click="postMail" class="btn btn-secondary border border-secondary rounded-pill purple w-100">Gönder</button>
       </div>
     </div>
     <div class="mt-5 pb-4 margin-resp">
@@ -301,6 +301,10 @@
     onMounted,
     ref
   } from 'vue';
+  import {
+    useToast
+  } from 'vue-toast-notification';
+  import 'vue-toast-notification/dist/theme-sugar.css';
   import Loading from 'vue-loading-overlay';
   import 'vue-loading-overlay/dist/css/index.css';
   import {
@@ -320,6 +324,50 @@
       isLoading.value = false
     }, 3000)
   })
+  const $toast = useToast();
+  const mailBody = ref({
+    name: '',
+    mail: '',
+    subject: '',
+    message: '',
+  })
+  const postMail = () => {
+    if(mailBody.value.name == ''){
+      $toast.warning('Lütfen Ad Soyad Giriniz.')      
+      return;
+    }
+    if(mailBody.value.mail == ''){
+      $toast.warning('Lütfen Mail Adresinizi Giriniz.')
+      return;
+    }
+    if(mailBody.value.subject == ''){
+      $toast.warning('Lütfen Konu Giriniz.')
+      return;
+    }
+    if(mailBody.value.message == ''){
+      $toast.warning('Lütfen Mesajınızı Giriniz.')
+      return;
+    }
+    let mail = `
+        <b>Ad Soyad: </b> ${mailBody.value.name} 
+        <br>
+        <b>Email: </b> ${mailBody.value.mail} 
+        <br>
+        <b>Konu: </b> ${mailBody.value.subject} 
+        <br>
+        <b>Mesaj: </b> ${mailBody.value.message} 
+        <br>
+      `
+    Email.send({
+      SecureToken: "e155651e-7a1a-4e71-85fa-17835eb0c2e0",
+      To: "info@teknokoz.com",
+      From: "info@teknokoz.com",
+      Subject: mailBody.value.mail,
+      Body: mail
+    }).then($toast.success('Mailiniz başarıyla gönderildi.', {
+      position: 'bottom-right',
+    }));
+  }
 </script>
 <style>
   h3 {
