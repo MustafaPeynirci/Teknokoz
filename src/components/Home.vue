@@ -359,7 +359,7 @@
         <br>
       `
     Email.send({
-      SecureToken: "e155651e-7a1a-4e71-85fa-17835eb0c2e0",
+      SecureToken: "9478703d-4529-4815-ad72-f228ecddb115",
       To: "info@teknokoz.com",
       From: "info@teknokoz.com",
       Subject: mailBody.value.mail,
